@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace iPantry.Core.Services
 {
-    class CrearProducto
+    class CrearProducto : ICrearProducto
     {
 
     }
