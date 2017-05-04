@@ -22,7 +22,7 @@ namespace iPantry.Core.ViewModel
                 // Must add following value to Assembly.cs for any Windows projects
                 // [assembly: InternalsVisibleTo("Cirrious.MvvmCross")]
                 return new MvxCommand(() =>
-                    ShowViewModel<iPantryViewModel>(new { subTotal = 40 }));
+                    ShowViewModel<iPantryViewModel>());
             }
         }
     }
