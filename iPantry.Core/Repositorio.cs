@@ -40,7 +40,7 @@ namespace iPantry.Core
                  *      throw new Exception ("Ingrese la fecha de caducidad del producto");
                  */
                 //insert a la database ver bien que pasa V esto
-                var result = await conn.InsertAllAsync(producto).ConfigureAwait(continueOnCapturedContext: false);
+                var result = await conn.InsertAsync(producto).ConfigureAwait(continueOnCapturedContext: false);
                 StatusMessage = $"{result} Agregados [Nombre del producto: {producto.NombreProducto}], [Marca del producto: {producto.MarcaProducto}] y Fecha del producto {producto.FechaProducto}]";
             }
             catch (Exception ex)
