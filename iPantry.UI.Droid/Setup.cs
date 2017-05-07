@@ -2,7 +2,7 @@ using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Platform;
 using RestaurantBilling.Core;
-namespace RestaurantBilling.UI.Droid
+namespace iPantry.UI.Droid
 {
     /// Every MvvmCross UI project needs a setup class.
     /// For Android, inherit from MvxAndroidSetup
