@@ -7,7 +7,7 @@ using System;
 
 namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
 {
-    [Table(nameof(Productos))]  //basado en iPantryDB
+    [Table(nameof(Producto))]  //basado en iPantryDB
     public class Producto       //Cambiar si es necesario
     {
         //id del producto (idProducto)
@@ -27,7 +27,7 @@ namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
         public string FechaProducto { get; set; }
 
         //cantidad del producto
-        [NotNull, MaxLenght(2)]
+        [NotNull, MaxLength(2)]
         public double CantidadProducto { get; set; }
 
         public Producto()

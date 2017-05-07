@@ -43,6 +43,7 @@
     <Compile Include="Services\ICrearProducto.cs" />
     <Compile Include="ViewModel\iPantryViewModel.cs" />
     <Compile Include="ViewModel\MainMenuViewModel.cs" />
+    <Compile Include="ViewModel\ObtenerProductosViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
