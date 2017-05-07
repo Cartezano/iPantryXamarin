@@ -1,7 +1,9 @@
 using Android.Content;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Platform;
+using MvvmCross.Platform;
 using iPantry.Core;
+
 namespace iPantry.UI.Droid
 {
     /// Every MvvmCross UI project needs a setup class.
@@ -21,7 +23,9 @@ namespace iPantry.UI.Droid
 
         protected override IMvxApplication CreateApp()
         {
-            return new App();
+            var dbConn = FileAccessHelper.GetLocalFilePath("restaurant.db3");
+            Mvx.RegisterSingleton(new Repositorio(dbConn));
+            return new Core.App();
         }
     }
 }
