@@ -11,6 +11,8 @@ using MvvmCross.Platform;
 
 namespace iPantry.Core.ViewModel
 {
+
+    //test random2
     /// All view models should inherit from MvxViewModel in MVVMCross
     public class iPantryViewModel : MvxViewModel
     {
