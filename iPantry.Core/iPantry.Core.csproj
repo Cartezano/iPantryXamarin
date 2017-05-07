@@ -38,6 +38,7 @@
     <Compile Include="CustomAppStart.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio.cs" />
     <Compile Include="Services\CrearProducto.cs" />
     <Compile Include="Services\ICrearProducto.cs" />
     <Compile Include="ViewModel\iPantryViewModel.cs" />

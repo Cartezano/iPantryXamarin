@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿
+using SQLite;
 using System;
 
 //utilizando iPantryDB de Trello, cambiar si necesario
@@ -24,18 +25,24 @@ namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
         [NotNull, MaxLength(20)]
         public string FechaProducto { get; set; }
 
+        //cantidad del producto
+        [NotNull, MaxLenght(2)]
+        public double CantidadProducto { get; set; }
+
         public Producto()
         {
             NombreProducto = string.Empty;
             MarcaProducto = string.Empty;
             FechaProducto = string.Empty;
+            CantidadProducto = 0;
         }
         //validador que no existan vacios
         public bool EsValido()
         {
             return (!String.IsNullOrWhiteSpace(NombreProducto) &&
                     !String.IsNullOrWhiteSpace(MarcaProducto) &&
-                    !String.IsNullOrWhiteSpace(FechaProducto));
+                    !String.IsNullOrWhiteSpace(FechaProducto) &&
+                    CantidadProducto != 0);
         }
     }
 }
