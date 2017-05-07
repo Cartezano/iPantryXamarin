@@ -3,6 +3,7 @@ using SQLite;
 using System;
 
 //utilizando iPantryDB de Trello, cambiar si necesario
+//instalar sql-net-pcl nugget
 
 namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
 {

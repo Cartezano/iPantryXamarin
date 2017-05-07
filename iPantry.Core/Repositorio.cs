@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using iPantry.Core.Models;
 using SQLite;
 
-
+//instalar sql-net-pcl nugget para usar SQLite supuestamente
 namespace iPantry.Core
 {
     class Repositorio
@@ -25,6 +25,7 @@ namespace iPantry.Core
         {
             try
             {
+                //double para el cantidadproducto de producto.cs
                 double CantidadProducto = (producto.CantidadProducto);
                 //cuatro excepciones distintas? o solo una que diga rellenar datos?
                 if (string.IsNullOrWhiteSpace(producto.NombreProducto) ||
