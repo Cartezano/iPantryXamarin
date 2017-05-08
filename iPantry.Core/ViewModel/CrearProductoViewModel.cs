@@ -19,7 +19,7 @@ namespace iPantry.Core.ViewModel
         string _nombreProducto;
         string _marcaProducto;
         string _fVencimiento;*/
-        double _cantidadProducto;
+        //double _cantidadProducto;
 
         public string NombreProducto
         {
@@ -53,10 +53,10 @@ namespace iPantry.Core.ViewModel
 
         public double CantidadProducto
         {
-            get { return _cantidadProducto; }
+            get { return _producto.CantidadProducto; }
             set
             {
-                _cantidadProducto = value;
+                _producto.CantidadProducto = value;
                 RaisePropertyChanged(() => CantidadProducto);
             }
         }
