@@ -7,7 +7,7 @@ using SQLite;
 //instalar sql-net-pcl nugget para usar SQLite supuestamente
 namespace iPantry.Core
 {
-    class Repositorio
+    public class Repositorio
     {
         private readonly SQLiteAsyncConnection conn;
         //mensaje del estado, cambiar si necesario
