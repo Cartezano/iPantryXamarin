@@ -3,6 +3,8 @@ using iPantry.Core.Models;
 using iPantry.Core.Services;
 using System.Windows.Input;
 using MvvmCross.Platform;
+using System;
+using System.Diagnostics;
 
 namespace iPantry.Core.ViewModel
 {
@@ -56,6 +58,7 @@ namespace iPantry.Core.ViewModel
             get { return _producto.CantidadProducto; }
             set
             {
+                //Debug.WriteLine("Insertando Cantidad = "+CantidadProducto);
                 _producto.CantidadProducto = value;
                 RaisePropertyChanged(() => CantidadProducto);
             }
