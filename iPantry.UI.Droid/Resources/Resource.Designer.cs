@@ -133,6 +133,9 @@ namespace iPantry.UI.Droid
 			// aapt resource value: 0x7f030003
 			public const int View_MainMenu = 2130903043;
 			
+			// aapt resource value: 0x7f030004
+			public const int View_SplashScreen = 2130903044;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

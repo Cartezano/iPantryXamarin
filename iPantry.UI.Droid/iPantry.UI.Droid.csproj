@@ -126,7 +126,9 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="Views\CrearProductoView.cs" />
     <Compile Include="Views\ListarProductos.cs" />
+    <Compile Include="Views\SplashScreenView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -144,6 +146,7 @@
     <AndroidResource Include="Resources\layout\View_MainMenu.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\View_SplashScreen.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
