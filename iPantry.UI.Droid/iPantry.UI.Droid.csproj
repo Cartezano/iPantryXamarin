@@ -127,7 +127,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\CrearProductoView.cs" />
-    <Compile Include="Views\ListarProductos.cs" />
+    <Compile Include="Views\ObtenerProductosView.cs" />
     <Compile Include="Views\MainMenuView.cs" />
     <Compile Include="Views\SplashScreenView.cs" />
   </ItemGroup>

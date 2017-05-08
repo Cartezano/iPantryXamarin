@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
 using iPantry.Core.Models;
 using iPantry.Core.Services;
 using System.Windows.Input;
@@ -14,7 +9,7 @@ namespace iPantry.Core.ViewModel
 
     //test random2
     /// All view models should inherit from MvxViewModel in MVVMCross
-    public class iPantryViewModel : MvxViewModel
+    public class CrearProductoViewModel : MvxViewModel
     {
         //se podra borrar porq no hace nada?
         readonly ICrearProducto _crearproducto;
@@ -66,7 +61,11 @@ namespace iPantry.Core.ViewModel
             }
         }
 
-
+        //codigo basura, puede eliminarse ya que CrearProducto no hacen nada?
+        public CrearProductoViewModel(ICrearProducto crearproducto)
+        {
+            _crearproducto = crearproducto;
+        }
 
         /// Used to implement button commanding for navigation.
         public ICommand NavBack
@@ -75,12 +74,6 @@ namespace iPantry.Core.ViewModel
             {
                 return new MvxCommand(() => Close(this));
             }
-        }
-
-        //codigo basura, puede eliminarse ya que CrearProducto no hacen nada?
-        public iPantryViewModel(ICrearProducto crearproducto)
-        {
-            _crearproducto = crearproducto;
         }
 
         public ICommand GuardarProducto
@@ -104,9 +97,5 @@ namespace iPantry.Core.ViewModel
             _producto = producto == null ? new Producto() : producto;
             RaiseAllPropertiesChanged();
         }
-
-
-
-
     }
 }

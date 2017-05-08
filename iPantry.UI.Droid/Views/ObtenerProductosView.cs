@@ -5,7 +5,7 @@ using MvvmCross.Droid.Views;
 namespace iPantry.UI.Droid.Views
 {
     [Activity(Label = "Listado de productos", NoHistory = true)]
-    public class ListarProductos : MvxActivity
+    public class ObtenerProductosView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {

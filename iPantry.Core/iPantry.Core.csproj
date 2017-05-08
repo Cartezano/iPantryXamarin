@@ -41,7 +41,7 @@
     <Compile Include="Repositorio.cs" />
     <Compile Include="Services\CrearProducto.cs" />
     <Compile Include="Services\ICrearProducto.cs" />
-    <Compile Include="ViewModel\iPantryViewModel.cs" />
+    <Compile Include="ViewModel\CrearProductoViewModel.cs" />
     <Compile Include="ViewModel\MainMenuViewModel.cs" />
     <Compile Include="ViewModel\ObtenerProductosViewModel.cs" />
   </ItemGroup>
