@@ -36,4 +36,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text CantidadProducto" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        local:MvxBind="Click GuardarProducto" />
 </LinearLayout>

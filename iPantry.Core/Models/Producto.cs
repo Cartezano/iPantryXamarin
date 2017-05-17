@@ -27,7 +27,7 @@ namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
         public string FechaProducto { get; set; }
 
         //cantidad del producto
-        [NotNull, MaxLength(2)]
+        [NotNull]
         public double CantidadProducto { get; set; }
 
         public Producto()
@@ -40,10 +40,11 @@ namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
         //validador que no existan vacios
         public bool EsValido()
         {
-            return (!String.IsNullOrWhiteSpace(NombreProducto) &&
-                    !String.IsNullOrWhiteSpace(MarcaProducto) &&
-                    !String.IsNullOrWhiteSpace(FechaProducto) &&
-                    CantidadProducto != 0);
+            //return (!String.IsNullOrWhiteSpace(NombreProducto) &&
+            //        !String.IsNullOrWhiteSpace(MarcaProducto) &&
+            //        !String.IsNullOrWhiteSpace(FechaProducto) &&
+            //        CantidadProducto != 0);
+            return true;
         }
     }
 }

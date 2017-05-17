@@ -41,11 +41,14 @@
     <Compile Include="Repositorio.cs" />
     <Compile Include="Services\CrearProducto.cs" />
     <Compile Include="Services\ICrearProducto.cs" />
-    <Compile Include="ViewModel\iPantryViewModel.cs" />
+    <Compile Include="ViewModel\CrearProductoViewModel.cs" />
     <Compile Include="ViewModel\MainMenuViewModel.cs" />
     <Compile Include="ViewModel\ObtenerProductosViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v7.1\Mono.Android.dll</HintPath>
+    </Reference>
     <Reference Include="MvvmCross.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
       <Private>True</Private>
