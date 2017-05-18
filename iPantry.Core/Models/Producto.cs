@@ -28,14 +28,14 @@ namespace iPantry.Core.Models  //cambiar por el core de la aplicacion
 
         //cantidad del producto
         [NotNull]
-        public double CantidadProducto { get; set; }
+        public string CantidadProducto { get; set; }
 
         public Producto()
         {
             NombreProducto = string.Empty;
             MarcaProducto = string.Empty;
             FechaProducto = string.Empty;
-            CantidadProducto = 0;
+            CantidadProducto = string.Empty;
         }
         //validador que no existan vacios
         public bool EsValido()

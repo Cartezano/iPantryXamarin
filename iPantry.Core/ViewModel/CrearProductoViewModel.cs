@@ -53,7 +53,7 @@ namespace iPantry.Core.ViewModel
             }
         }
 
-        public double CantidadProducto
+        public string CantidadProducto
         {
             get { return _producto.CantidadProducto; }
             set
