@@ -10,7 +10,7 @@ namespace iPantry.UI.Droid.Views
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.ListarTodosLosProductos);
+            SetContentView(Resource.Layout.View_ObtenerProductos);
         }
     }
 }

@@ -138,10 +138,10 @@
     <AndroidResource Include="Resources\layout\vCrearProducto.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ListaProductoLayout.axml">
+    <AndroidResource Include="Resources\layout\ListaProducto.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ListarTodosLosProductos.axml">
+    <AndroidResource Include="Resources\layout\View_ObtenerProductos.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\View_MainMenu.axml">

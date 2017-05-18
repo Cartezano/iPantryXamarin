@@ -7,6 +7,6 @@
     <Mvx.MvxListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        local:MvxBind="ItemsSource ListarProductos"
-        local:MvxItemTemplate="@layout/listaproductolayout" />
+        local:MvxBind="ItemsSource TodosLosProductos"
+        local:MvxItemTemplate="@layout/listaproducto" />
 </LinearLayout>
