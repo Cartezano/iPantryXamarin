@@ -44,6 +44,7 @@
     <Compile Include="ViewModel\CrearProductoViewModel.cs" />
     <Compile Include="ViewModel\MainMenuViewModel.cs" />
     <Compile Include="ViewModel\ObtenerProductosViewModel.cs" />
+    <Compile Include="ViewModel\ObtenerProductosDiasViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android">

@@ -62,6 +62,21 @@ namespace iPantry.Core
             return conn.Table<Producto>().ToListAsync();
         }
 
+        public Task<List<Producto>> ObtenerProductosDias()
+        {
+            //variable para obtener el tiempo en DateTime sin tiempo
+            var HoyTiempo = DateTime.Now;
+            var Hoy = HoyTiempo.Date;
+
+            //convertir a dia a buscar (7 antes)
+            var DiaBuscadoTiempo = Hoy.AddDays(-7);
+            var DiaBuscado = DiaBuscadoTiempo.Date;
+            string DiaBuscadoCambio = DiaBuscado.ToString();
+
+            return conn.Table<Producto>().Where(e => e.FechaProducto == DiaBuscadoCambio).ToListAsync();
+
+        }
+
         private string ResultCode(int Codigo)
         {
             int codigo = Codigo;

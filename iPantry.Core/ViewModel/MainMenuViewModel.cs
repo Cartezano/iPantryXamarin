@@ -30,6 +30,14 @@ namespace iPantry.Core.ViewModel
 
             }
         }
+        public ICommand NavegarObtenerProductosDias
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<ObtenerProductosDiasViewModel>());
+
+            }
+        }
 
 
 
